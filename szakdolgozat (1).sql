@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Jan 12. 16:19
+-- Létrehozás ideje: 2022. Ápr 01. 23:20
 -- Kiszolgáló verziója: 10.4.14-MariaDB
 -- PHP verzió: 7.2.34
 
@@ -19,34 +19,17 @@ SET time_zone = "+00:00";
 
 --
 -- Adatbázis: `szakdolgozat`
---
+-- 
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `admin`
+-- Tábla szerkezet ehhez a táblához `felhasznalo`
 --
 
-CREATE TABLE `admin` (
-  `AdminId` int(11) NOT NULL,
-  `AdminEmail` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `AdminNév` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `AdminFelhasznaloNév` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `AdminJelszo` varchar(250) COLLATE utf8_hungarian_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
-
--- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `felhasználok`
---
-
-CREATE TABLE `felhasználok` (
-  `ID` int(11) NOT NULL,
-  `teljesnév` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `emailcim` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `jelszo` varchar(250) COLLATE utf8_hungarian_ci NOT NULL,
-  `felhasznalonev` varchar(250) COLLATE utf8_hungarian_ci NOT NULL
+CREATE TABLE `felhasznalo` (
+  `name` varchar(255) COLLATE utf8_hungarian_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_hungarian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
 --
@@ -54,32 +37,10 @@ CREATE TABLE `felhasználok` (
 --
 
 --
--- A tábla indexei `admin`
+-- A tábla indexei `felhasznalo`
 --
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`AdminId`);
-
---
--- A tábla indexei `felhasználok`
---
-ALTER TABLE `felhasználok`
-  ADD PRIMARY KEY (`ID`);
-
---
--- A kiírt táblák AUTO_INCREMENT értéke
---
-
---
--- AUTO_INCREMENT a táblához `admin`
---
-ALTER TABLE `admin`
-  MODIFY `AdminId` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT a táblához `felhasználok`
---
-ALTER TABLE `felhasználok`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `felhasznalo`
+  ADD PRIMARY KEY (`name`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
