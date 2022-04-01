@@ -16,12 +16,12 @@
       <a class="navbar-brand" href="#">autokisokos</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="kezdolap.php">Home</a></li>
       <li><a href="Vw.php">Vw</a></li>
       <li><a href="opel.php"> Opel</a></li>
       <li><a href="renault.php"> Renault</a></li>
 	    <li><a href="suzuki.php">Suzuki</a></li>
-      <li><a href="register.php">Regisztrácio</a></li>
+     
 
 	  
 
@@ -30,9 +30,22 @@
 </nav>
   
 <div class="container">
-  <h1>Udv !</h1>
-  <h2>majd egyszer ha vegre be fejeztem az adat gyüjtést itt lesznek a pár Opel márkaju autok hibái amiket ismerek </h2>
-    <h3>képek is várhatoka</h3>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Opel Vectra/Astra 90-05</h5>
+    <p class="card-text">A régebbi opeleknél jellemzö volt hogy a motor blok 
+      és az olaj teknö más anyagbol készult ennek következteben a hö hatására máshogyan 
+      tágultak a vasak igy mondjuk miután le áltak a kocsival az olaj tekno gyorsabban vette vissza az ereti 
+      alakját még a motor nem és ennek következtében az olaj ott konnyen tudott szivárogni.
+      
+  
+  </p>
+    
+  </div>
+</div>
+  </div>
+</div>
 </div>
 
 </body>
