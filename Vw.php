@@ -16,12 +16,12 @@
       <a class="navbar-brand" href="#">autokisokos</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="kezdolap.php">Home</a></li>
       <li><a href="Vw.php">Vw</a></li>
       <li><a href="opel.php"> Opel</a></li>
       <li><a href="renault.php"> Renault</a></li>
 	    <li><a href="suzuki.php">Suzuki</a></li>
-      <li><a href="register.php">Regisztrácio</a></li>
+     
 
 	  
 
@@ -30,9 +30,16 @@
 </nav>
   
 <div class="container">
-  <h1>Udv !</h1>
-  <h2>majd egyszer ha vegre be fejeztem az adat gyüjtést itt lesznek a pár Volkswagen márkaju autok hibái amiket ismerek </h2>
-    <h3>képek is várhatoka</h3>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="./img/golfsarvedo1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text"> A Volksvagennél a mai napig tipus hiba szinte az ossze személygépkocsiukra 
+      , hogy a sárvedo rosz kialakitása miatt a sár a homok és a viz konnyen be jut a sárvedo es a
+       kaszni közé de már onnan nem tud ki jutni, ennek kovetkeztében ott rohadásnak indul a vas.
+    </p>
+   
+  </div>
 </div>
 
 </body>
