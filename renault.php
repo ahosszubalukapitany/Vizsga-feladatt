@@ -16,12 +16,12 @@
       <a class="navbar-brand" href="#">autokisokos</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="kezdolap.php">Home</a></li>
       <li><a href="Vw.php">Vw</a></li>
       <li><a href="opel.php"> Opel</a></li>
       <li><a href="renault.php"> Renault</a></li>
 	    <li><a href="suzuki.php">Suzuki</a></li>
-      <li><a href="register.php">Regisztrácio</a></li>
+     
 
 	  
 
